@@ -30,6 +30,18 @@ ul {
 a {
 	text-decoration: none;
 }
+a:link {
+  color: #a7c353;
+}
+a:visited {
+  color: #885e54;
+}
+a:hover {
+  color: #101010;
+}
+a:active {
+  color: #85a033;
+}
 img {
 	width: 100%;
 }
@@ -446,11 +458,13 @@ input:not([type="submit"]) {
 	border-radius: 5px;
 	font-size: 14px;
 	letter-spacing: 0.03em;
+	outline: none;
 }
 textarea {
 	margin: 5px 25px 13px 0;
 	display: block;
 	width: 90%;
+	outline: none;
     background-color: #999999;
 	border: none;
 	padding: 7px 0 7px 10px;
