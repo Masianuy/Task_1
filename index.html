@@ -1,50 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Cup-plans-flexbox</title>
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="font/miso-bold-webfont.woff">
-	<link rel="stylesheet" href="font/miso-regular-webfont.woff">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css.txt">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-	<div class="content">
-		<div class="content-cup content-col-1">
-			<p class="content-cup--price-1">$2</p>
-			<svg class="content-cup--svg-1" xmlns="http://www.w3.org/2000/svg"
-			 xmlns:xlink="http://www.w3.org/1999/xlink"
-			 width="135px" height="134px">
-			<image  x="0px" y="0px" width="135px" height="134px"  xlink:href="data:img/png;base64,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" />
-			</svg>
-			<h2 class="content-cup--header-1">Bronze</h2>
-			<p class="content-cup--text-1">any cup of coffee</p>
-			<p class="content-cup--price-1-text-2">until $3</p>
-		</div>
-		<div class="content-cup content-col-2">
-			<p class="content-cup--price-2">$3</p>
-			<svg class="content-cup--svg-2" xmlns="http://www.w3.org/2000/svg"
-			 xmlns:xlink="http://www.w3.org/1999/xlink"
-			 width="135px" height="134px">
-			<image  x="0px" y="0px" width="135px" height="134px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACGCAMAAADAZWmdAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACylBMVEX/////yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij/yij8yCj+ySjywCbouCTltSTruiX2wyf4xCfxvybmtiTzwCb6xifntyT5xSfpuSXuvSX9yCj1wibwvib7xyfsuyXvvSX0wSbquSXtvCX3xCf///8Q9LsbAAAA0nRSTlMAEA4GdjsCX4BmE0d6Kzl/OjJMeA1rTxd9C1QvIhJ1UBRySD0HLnkzVXEhGFwPPn4bW1o0QwNdRE5Rc0UpZAgxbicBKGEtH141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" />
-			</svg>
-			<h2 class="content-cup--header-2">Gold</h2>
-			<p class="content-cup--text-2">any cup of coffee</p>
-			<p class="content-cup--price-2-text-2">until $5</p>
-		</div>
-		<div class="content-cup content-col-1">
-			<p class="content-cup--price-1">$2.5</p>
-			<svg class="content-cup--svg-1" xmlns="http://www.w3.org/2000/svg"
-			 xmlns:xlink="http://www.w3.org/1999/xlink"
-			 width="135px" height="134px">
-			<image  x="0px" y="0px" width="135px" height="134px"  xlink:href="data:img/png;base64,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" />
-			</svg>
-			<h2 class="content-cup--header-1">Silver</h2>
-			<p class="content-cup--text-1">any cup of coffee</p>
-			<p class="content-cup--price-1-text-2">until $4</p>
-		</div>
-	</div>
-</body>
+<html lang="uk-UA">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <!--CUSTOM FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="css/slick-theme.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="container">
+      <header>
+        <div class="header__logo">
+          <p class="header__title-logo">Clearcut</p>
+          <p class="header__sub-logo">Free PSD Website Template</p>
+        </div>
+        <ul class="header__nav">
+          <li class="header__nav-item active">
+            <a href="#" class="header__nav-link" title="Home">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link" title="Style demo">Style demo</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link" title="Full width">Full width</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link" title="Dropdown">Dropdown</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link" title="Portfolio">Portfolio</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link" title="Gallery">Gallery</a>
+          </li>
+        </ul>
+        <ul id="header__nav-phone">
+          <li>
+            <a href="#" title="Home">Home</a>
+          </li>
+          <li>
+            <a href="#" title="Style demo">Style demo</a>
+          </li>
+          <li>
+            <a href="#" title="Full width">Full width</a>
+          </li>
+          <li>
+            <a href="#" title="Dropdown">Dropdown</a>
+          </li>
+          <li>
+            <a href="#" title="Portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" title="Gallery">Gallery</a>
+          </li>
+        </ul>
+        <div class="header__phone-menu">
+          <button class="button_hamburger"><span></span></button>
+        </div>
+      </header>
+      <section class="quote">
+        <q class="quote__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam 
+          erat. In fringilla massa ut nisi ullamcorper pellentesque</q>
+      </section>
+      <section class="section__slider">
+        <div class="slider__wrap">
+          <div class="slider__slide">
+            <img src="img/1.jpg" alt="slide1" class="slider__slide-img">
+            <div class="slider__inner">
+              <h1 class="slider__inner-title">This Is A Very Long Slider Title</h1>
+              <p class="slider__inner-text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit.</p>
+            </div>
+          </div>
+          <div class="slider__slide">
+            <img src="img/2.jpg" alt="slide2" class="slider__slide-img">
+          </div>
+          <div class="slider__slide">
+            <img src="img/3.jpg" alt="slide3" class="slider__slide-img">
+          </div>
+        </div>
+        <div class="slider__arrow-prev">
+          <svg fill="#a7c353">
+            <use href="#arrow_slider"></use>
+          </svg>
+        </div>
+        <div class="slider__arrow-next">
+          <svg fill="#a7c353">
+            <use href="#arrow_slider"></use>
+          </svg>
+        </div>
+      </section>
+      <section class="articles">
+        <div class="articles__item article__about-us">
+          <h3 class="about-us__title">A Little About Us</h3>
+          <div class="about-us__img">
+            <img src="img/4.jpg" alt="">
+          </div>
+          <p class="about-us__content">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.</p>
+          <p class="about-us__content">Idenim semper pellente velis felit ac. Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt.</p>
+          <a href="#" class="read-more">Read More About Us</a>
+        </div>
+        <div class="articles__item article__services">
+          <h3>Some of Our Services</h3>
+          <div class="services__items">
+            <div class="services__item">
+              <div class="services__item-img">
+                <img src="img/5.jpg" alt="Service1">
+              </div>
+              <div class="services__content">
+                <h6 class="services__title">Service Title</h6>
+                <p class="services__text">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__item-img">
+                <img src="img/5.jpg" alt="Service2">
+              </div>
+              <div class="services__content">
+                <h6 class="services__title">Service Title</h6>
+                <p class="services__text">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__item-img">
+                <img src="img/5.jpg" alt="Service3">
+              </div>
+              <div class="services__content">
+                <h6 class="services__title">Service Title</h6>
+                <p class="services__text">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+              </div>
+            </div>
+            <div class="services__item">
+              <div class="services__item-img">
+                <img src="img/5.jpg" alt="Service4">
+              </div>
+              <div class="services__content">
+                <h6 class="services__title">Service Title</h6>
+                <p class="services__text">Inteligula congue id elis donec sce sag ittis intes id laoreet aenean.</p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="read-more">View All Of Our Services</a>
+
+        </div>
+        <div class="articles__item article__testimonial">
+          <h3>What Our Clients Say</h3>
+          <div class="testimonial__items">
+            <div class="testimonial__item">
+              <div class="testimonial__autor">
+                <svg width="53px" height="44px">
+                  <use href="#quotes"></use>
+                </svg>
+                <p>Tommy Tanker - CEO</p>
+              </div>
+              <p class="testimonial__text">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+              <a href="#" class="read-more">View This Project</a>
+            </div>
+            <div class="testimonial__item">
+              <div class="testimonial__autor">
+                <svg width="53px" height="44px">
+                  <use href="#quotes"></use>
+                </svg>
+                <p>Tommy Tanker - CEO</p>
+              </div>
+              <p class="testimonial__text">Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoreet tincidunt ut vel velit. Idenim semper pellente velis felit ac nullam pretium morbi lacus.</p>
+              <a href="#" class="read-more">View This Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top__column column__contacts">
+          <h5 class="footer-top__column-title">Company Details</h5>
+          <div class="contacts-item">
+            <p>Company Name</p>
+            <p>Street Name & Number</p>
+            <p>Town</p>
+            <p>Postcode/Zip</p>
+          </div>
+          <div class="contacts-item">
+            <p class="contacts-tel">Tel: <a href="tel:+xxxxx xxxxxxxxxx">xxxxx xxxxxxxxxx</a></p>
+            <p>Fax: xxxxx xxxxxxxxxx</p>
+            <p class="contacts-email">Email: <a href="mailto:">contact@mydomain.com</a></p>
+          </div>
+          <div class="contacts-item">
+            <p>Office Hours</p>
+            <p>Monday - Friday: 08:00 - 17:30</p>
+            <p>Saturday: 08:00 - 13:00</p>
+          </div>
+        </div>
+        <div class="footer-top__column column__social">
+          <h5 class="footer-top__column-title">Stay Social</h5>
+          <div class="column__social-item">
+            <span>
+              <svg width="16px" height="14px">
+                <use href="#icon-linkedin"></use>
+              </svg>
+            </span>
+            <p>Get linked up in LinkedIn</p>
+          </div>
+          <div class="column__social-item">
+            <span>
+              <svg width="16px" height="14px">
+                <use href="#icon-twitter"></use>
+              </svg>
+            </span>
+            <p>Keep up with our Tweets</p>
+          </div>
+          <div class="column__social-item">
+            <span>
+              <svg width="16px" height="14px">
+                <use href="#icon-pinterest"></use>
+              </svg>
+            </span>
+            <p>Photos on Pinterest</p>
+          </div>
+          <div class="column__social-item">
+            <span>
+              <svg width="16px" height="14px">
+                <use href="#icon-rss"></use>
+              </svg>
+            </span>
+            <p>RSS Feed</p>
+          </div>
+        </div>
+        <div class="footer-top__column column__blog">
+          <h5 class="footer-top__column-title">From The Blog</h5>
+          <div class="column__blog-item">
+            <h6 class="column__blog-title">Blog Post Title</h6>
+            <span>Posted by Admin on 00.00.0000</span>
+            <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+            <a href="#" class="blog__read-more read-more">Read More</a>
+          </div>
+          <div class="column__blog-item">
+            <h6 class="column__blog-title">Blog Post Title</h6>
+            <span>Posted by Admin on 00.00.0000</span>
+            <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed facilispede estibulum.</p>
+            <a href="#" class="blog__read-more read-more">Read More</a>
+          </div>
+        </div>
+        <div class="footer-top__column column__form">
+          <h5 class="footer-top__column-title">Contact Us</h5>
+          <form action="get">
+            <input type="text" name="Name" placeholder="Name">
+            <input type="email" name="Email" placeholder="Email">
+            <textarea name="Message" id="" cols="30" rows="6" placeholder="Message"></textarea>
+            <input type="submit" value="submit" class="column__form-btn">
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
+        <p>Template by OS Templates</p>
+      </div>
+    </footer>
+  
+    <svg style="display: none;">
+      <symbol id="icon-linkedin" width="16px" height="14px">
+        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        d="M3.725,4.427 L0.683,4.427 L0.683,14.000 L3.725,14.000 L3.725,4.427 L3.725,4.427 ZM3.939,1.471 C3.929,0.715 3.266,-0.000 2.223,-0.000 C1.191,-0.000 0.500,0.715 0.500,1.652 C0.500,2.569 1.163,3.304 2.187,3.304 L2.205,3.304 C3.266,3.304 3.949,2.569 3.939,1.652 L3.939,1.471 L3.939,1.471 ZM15.500,8.443 C15.500,5.620 14.002,4.385 11.952,4.385 C10.139,4.205 9.345,5.161 8.907,5.818 L8.928,5.837 L8.928,4.585 L5.578,4.585 C5.578,4.585 5.619,5.394 5.578,13.930 L8.928,13.930 L8.928,8.588 C8.928,8.298 8.958,8.018 9.040,7.806 C9.284,7.236 9.834,6.646 10.760,6.646 C11.972,6.646 12.458,7.525 12.458,8.810 L12.458,13.930 L15.500,13.930 L15.500,8.443 L15.500,8.443 Z"/>
+      </symbol>
+      <symbol id="icon-twitter" width="16px" height="14px">
+        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        d="M15.500,2.044 C14.950,2.298 14.350,2.480 13.731,2.551 C14.369,2.145 14.855,1.505 15.083,0.744 C14.493,1.119 13.827,1.394 13.132,1.536 C12.570,0.896 11.771,0.500 10.885,0.500 C9.181,0.500 7.811,1.973 7.811,3.780 C7.811,4.034 7.839,4.288 7.887,4.532 C5.336,4.390 3.061,3.090 1.547,1.099 C1.280,1.587 1.128,2.145 1.128,2.755 C1.128,3.892 1.671,4.898 2.499,5.487 C1.994,5.466 1.519,5.314 1.109,5.070 L1.109,5.111 C1.109,6.705 2.166,8.026 3.575,8.330 C3.318,8.401 3.042,8.442 2.766,8.442 C2.566,8.442 2.375,8.422 2.185,8.391 C2.575,9.691 3.708,10.636 5.060,10.666 C4.003,11.550 2.680,12.068 1.242,12.068 C0.985,12.068 0.747,12.058 0.500,12.027 C1.861,12.962 3.479,13.500 5.221,13.500 C10.876,13.500 13.969,8.503 13.969,4.166 C13.969,4.024 13.969,3.882 13.960,3.740 C14.560,3.273 15.083,2.694 15.500,2.044 L15.500,2.044 Z"/>
+      </symbol>
+      <symbol id="icon-pinterest" width="16px" height="14px">
+        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        d="M15.500,8.377 C15.500,4.135 11.986,0.500 8.112,0.500 C3.849,0.500 0.500,4.135 0.500,8.377 C0.500,11.624 2.242,14.080 5.057,15.003 C5.037,14.584 5.047,14.080 5.184,13.630 C5.184,13.630 5.331,13.149 6.158,9.500 C5.909,8.995 5.909,8.243 5.909,8.243 C5.909,7.068 6.567,6.191 7.384,6.191 C8.082,6.191 8.420,6.738 8.420,7.387 C8.420,8.109 7.973,9.191 7.743,10.191 C7.554,11.036 8.152,11.716 8.829,11.716 C9.956,11.716 10.713,9.789 10.713,7.511 C10.713,5.843 9.832,4.774 8.192,4.774 C5.870,4.774 4.449,6.264 4.449,8.263 C4.449,8.954 4.645,9.438 4.949,9.820 C5.086,9.995 5.105,10.057 5.057,10.263 C5.017,10.407 4.939,10.758 4.900,10.892 C4.851,11.098 4.694,11.170 4.527,11.098 C3.349,10.645 2.794,9.428 2.794,8.068 C2.794,5.885 4.792,2.913 8.401,2.913 C10.673,2.913 13.206,5.470 13.206,7.655 C13.206,10.768 10.979,13.087 8.960,13.087 C8.292,13.087 7.514,12.623 7.255,12.098 C6.806,13.715 6.717,13.979 6.717,13.979 C6.557,14.437 6.228,14.895 5.939,15.252 C6.637,15.415 7.355,15.500 8.112,15.500 C11.986,15.500 15.500,12.747 15.500,8.377 L15.500,8.377 Z"/>
+      </symbol>
+      <symbol id="icon-rss" width="16px" height="14px">
+        <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+        d="M4.043,12.091 C4.043,11.037 3.250,10.182 2.272,10.182 C1.293,10.182 0.500,11.037 0.500,12.091 C0.500,13.145 1.293,14.000 2.272,14.000 C3.250,14.000 4.043,13.145 4.043,12.091 L4.043,12.091 ZM8.767,13.314 C8.610,11.196 7.752,9.197 6.350,7.696 C4.957,6.185 3.102,5.260 1.137,5.091 L1.090,5.091 C0.943,5.091 0.795,5.150 0.694,5.260 C0.565,5.379 0.500,5.548 0.500,5.727 L0.500,7.070 C0.500,7.398 0.731,7.666 1.035,7.696 C3.849,7.984 6.082,10.391 6.350,13.423 C6.378,13.751 6.627,14.000 6.931,14.000 L8.177,14.000 C8.343,14.000 8.500,13.930 8.610,13.791 C8.721,13.662 8.777,13.493 8.767,13.314 L8.767,13.314 ZM13.499,13.334 C13.325,9.854 11.969,6.582 9.672,4.116 C7.383,1.641 4.348,0.179 1.118,-0.000 L1.090,-0.000 C0.943,-0.000 0.795,0.060 0.684,0.179 C0.565,0.298 0.500,0.457 0.500,0.636 L0.500,2.058 C0.500,2.386 0.740,2.665 1.054,2.685 C6.414,3.023 10.687,7.626 10.991,13.403 C11.010,13.741 11.268,14.000 11.582,14.000 L12.901,14.000 C13.067,14.000 13.215,13.930 13.325,13.801 C13.445,13.672 13.508,13.503 13.499,13.334 L13.499,13.334 Z"/>
+      </symbol>
+      <symbol id="arrow_slider" width="16px" height="28px" background-color="black">
+        <path fill-rule="evenodd"  fill="rgb(167, 195, 83)" d="M0.934,12.957 L12.976,0.933 C13.399,0.510 14.035,0.384 14.588,0.612 C15.139,0.841 15.500,1.379 15.500,1.976 L9.182,14.000 L15.500,26.024 C15.500,26.622 15.139,27.159 14.588,27.387 C14.405,27.463 14.212,27.500 14.022,27.500 C13.637,27.500 13.260,27.350 12.976,27.068 L0.934,15.044 C0.658,14.769 0.500,14.389 0.500,14.000 C0.500,13.612 0.658,13.232 0.934,12.957 Z"/>
+      </symbol>
+      <symbol id="quotes" width="53px" height="44px">
+        <path fill-rule="evenodd"  fill="rgb(212, 212, 212)"
+        d="M20.300,-0.000 C18.686,1.031 16.669,2.363 14.290,3.996 C11.891,5.629 9.619,7.605 7.496,9.926 C5.415,12.203 3.631,14.803 2.187,17.703 C0.722,20.603 -0.000,23.805 -0.000,27.328 C-0.000,32.312 0.956,36.352 2.888,39.402 C4.820,42.475 8.026,44.000 12.507,44.000 C15.373,44.000 17.624,43.012 19.280,41.014 C20.915,39.037 21.744,36.889 21.744,34.590 C21.744,31.367 20.852,28.939 19.068,27.264 C17.284,25.588 14.864,24.750 11.764,24.750 L8.154,24.750 C8.451,21.957 8.961,19.658 9.725,17.875 C10.468,16.113 11.551,14.416 12.953,12.783 C14.460,11.064 15.947,9.668 17.391,8.615 C18.834,7.584 20.746,6.316 23.103,4.855 L20.300,-0.000 L20.300,-0.000 ZM50.197,-0.000 C48.583,1.031 46.566,2.363 44.188,3.996 C41.788,5.629 39.516,7.605 37.393,9.926 C35.312,12.203 33.528,14.803 32.085,17.703 C30.619,20.603 29.897,23.805 29.897,27.328 C29.897,32.312 30.853,36.352 32.785,39.402 C34.718,42.475 37.924,44.000 42.404,44.000 C45.271,44.000 47.522,43.012 49.178,41.014 C50.813,39.037 51.641,36.889 51.641,34.590 C51.641,31.367 50.749,28.939 48.965,27.264 C47.182,25.588 44.761,24.750 41.661,24.750 L38.051,24.750 C38.349,21.957 38.858,19.680 39.580,17.918 C40.302,16.178 41.406,14.459 42.850,12.783 C44.358,11.064 45.844,9.668 47.288,8.615 C48.732,7.584 50.643,6.316 53.000,4.855 L50.197,-0.000 L50.197,-0.000 Z"/>
+      </symbol>
+    </svg>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
-<span></span>
