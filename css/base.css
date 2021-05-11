@@ -415,7 +415,7 @@ footer {
 	border-bottom: 1px solid #999999;
 	width: 90%;
 }
-.column__social-item a {
+.column__social-item span {
 	background-color: #383838;
 	border-radius: 50px;
 	padding: 8px;
