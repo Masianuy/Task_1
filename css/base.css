@@ -243,14 +243,12 @@ header {
 	overflow: hidden;
 	border: 1px solid #a7c353;
 }
-.slider__arrow-prev:hover, .slider__arrow-prev svg:hover {
-	fill: #000000;
-	background-color: #a7c353;
+.slider__arrow-prev:hover {
+	background-color: #ffffff;
 	border: 2px solid #000000;
 }
-.slider__arrow-next:hover, .slider__arrow-next svg:hover {
-	fill: #000000;
-	background-color: #a7c353;
+.slider__arrow-next:hover {
+	background-color: #ffffff;
 	border: 2px solid #000000;
 }
 .slick-dots {
