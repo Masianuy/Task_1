@@ -452,7 +452,7 @@ input:not([type="submit"]) {
 	margin: 5px 25px 13px 0;
 	display: block;
 	width: 90%;
-    background-color: #999999;
+    background-color: #383838;
 	border: none;
 	padding: 7px 0 7px 10px;
 	border-radius: 5px;
@@ -465,7 +465,7 @@ textarea {
 	display: block;
 	width: 90%;
 	outline: none;
-    background-color: #999999;
+    background-color: #383838;
 	border: none;
 	padding: 7px 0 7px 10px;
 	border-radius: 5px;
