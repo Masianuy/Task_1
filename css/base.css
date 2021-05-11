@@ -226,6 +226,7 @@ header {
 	padding: 16px 19px;
 	border-radius: 30px;
 	cursor: pointer;
+	overflow: hidden;
 	border: 1px solid #a7c353;
 }
 .slider__arrow-next {
@@ -239,13 +240,16 @@ header {
 	border-radius: 30px;
 	transform: rotate(180deg);
 	cursor: pointer;
+	overflow: hidden;
 	border: 1px solid #a7c353;
 }
-.slider__arrow-prev:hover {
+.slider__arrow-prev:hover, .slider__arrow-prev svg:hover, {
+	fill: #000000;
 	background-color: #a7c353;
 	border: 2px solid #000000;
 }
-.slider__arrow-next:hover {
+.slider__arrow-next:hover,.slider__arrow-next svg:hover, {
+	fill: #000000;
 	background-color: #a7c353;
 	border: 2px solid #000000;
 }
