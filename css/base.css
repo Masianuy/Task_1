@@ -241,6 +241,14 @@ header {
 	cursor: pointer;
 	border: 1px solid #a7c353;
 }
+.slider__arrow-prev:hover {
+	background-color: #a7c353;
+	border: 1px solid #000000;
+}
+.slider__arrow-next:hover {
+	background-color: #a7c353;
+	border: 1px solid #000000;
+}
 .slick-dots {
 	margin-bottom: -15px;
 }
