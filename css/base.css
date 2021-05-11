@@ -459,6 +459,7 @@ input:not([type="submit"]) {
 	font-size: 14px;
 	letter-spacing: 0.03em;
 	outline: none;
+	color: #989898;
 }
 textarea {
 	margin: 5px 25px 13px 0;
@@ -471,6 +472,7 @@ textarea {
 	border-radius: 5px;
 	font-size: 14px;
 	letter-spacing: 0.03em;
+	color: #989898;
 }
 textarea::placeholder {
 	font-size: 14px;
